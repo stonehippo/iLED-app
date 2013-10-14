@@ -9,5 +9,5 @@ build/
 *.perspectivev3
 *.mode1v3
 *.mode2v3
-/iLED.xcodeproj/project.xcworkspace/*
-/iLED.xcodeproj/xcuserdata/*
+/iPhone/iLED/iLED.xcodeproj/project.xcworkspace/*
+/iPhone/iLED/iLED.xcodeproj/xcuserdata/*
