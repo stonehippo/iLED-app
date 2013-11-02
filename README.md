@@ -6,7 +6,7 @@ iLED is a simple iPhone application that displays the state of an Arduino-contro
 iPhone app
 ----------
 
-The app was built with Xcode 4.2 and targets iOS 5. It could be adapted to earlier versions of iOS. Fork the project if you want to take a crack at that.
+The app was originally built with Xcode 4.2 and targets iOS 5 or better. I have since built it on modern versions of Xcode and it works fine. It could be adapted to earlier versions of iOS, assuming you have a device that cannot be upgraded (such as an iPhone 3G or a first-gen iPad). Fork the project if you want to take a crack at that.
 
 You'll need to be a member of the [Apple iOS Developer program](http://developer.apple.com/programs/ios/) to actually install the app on your device.
 
