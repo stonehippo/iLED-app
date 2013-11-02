@@ -296,6 +296,7 @@
 		347FC8AF145662330055BD5A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iLED/iLED-Prefix.pch";
 				INFOPLIST_FILE = "iLED/iLED-Info.plist";
@@ -311,6 +312,7 @@
 		347FC8B0145662330055BD5A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iLED/iLED-Prefix.pch";
 				INFOPLIST_FILE = "iLED/iLED-Info.plist";
