@@ -29,7 +29,7 @@ Note that the app should work with just about any photo resistor circuit you car
 
 ### iOS-to-Arduino interface ###
 
-This app was designed around the serial-to-iOS interface provided by the . This cable has a standard male DB-9 serial connector one end and an Apple Dock Connector on the other. The cable uses the iOS External Accessory API to interface with RS-232 serial devices.
+This app was designed around the serial-to-iOS interface provided by the Redpark C2-DB9 Serial to 30-pin cable. This cable has a standard male DB-9 serial connector one end and an Apple Dock Connector on the other. The cable uses the iOS External Accessory API to interface with RS-232 serial devices.
 
 There is more information the cable, including the Redpark SDK at the [Redpark Serial Cable for iOS](http://redpark.com/c2db9.html) page.
 
