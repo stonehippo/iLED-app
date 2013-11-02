@@ -16,7 +16,7 @@ The hardware
 The hardware side of things consists of a few components:
 
 * An Arduino micro-controller board (I used a [Duemilanove](http://arduino.cc/en/Main/ArduinoBoardDuemilanove), but the newer Uno will work great, as will most of the older boards)
-* An iOS device running iOS 5 (iPhone|iPad|iPod Touch)
+* An iOS device running iOS 5+ (iPhone/iPad/iPad Mini/iPod Touch)
 * A Redpark Serial Cable for iOS
 * Some form of RS-232 Shifter; I used one from [SparkFun](http://www.sparkfun.com/products/449)
 * The parts for the photo resistor circuit (see below)
@@ -31,7 +31,7 @@ Note that the app should work with just about any photo resistor circuit you car
 
 This app was designed around the serial-to-iOS interface provided by the Redpark C2-DB9 Serial to 30-pin cable. This cable has a standard male DB-9 serial connector one end and an Apple Dock Connector on the other. The cable uses the iOS External Accessory API to interface with RS-232 serial devices.
 
-There is more information the cable, including the Redpark SDK at the [Redpark Serial Cable for iOS](http://redpark.com/c2db9.html) page.
+There is more information the cable, including the Redpark SDK at the [Redpark Serial Cable for iOS](http://redpark.com/c2db9.html) page. Redpark also makes cables for the newer Lightning connector found on newer iOS devices.
 
 You can buy the Redpark Serial Cables from the [Maker Shed](http://redpark.com/c2db9.html).
 
