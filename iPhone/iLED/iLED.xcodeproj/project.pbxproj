@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		341C461218769A8B00480F6B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 341C461118769A8B00480F6B /* Images.xcassets */; };
 		347FC895145662320055BD5A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 347FC894145662320055BD5A /* UIKit.framework */; };
 		347FC897145662320055BD5A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 347FC896145662320055BD5A /* Foundation.framework */; };
 		347FC899145662320055BD5A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 347FC898145662320055BD5A /* CoreGraphics.framework */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		341C461118769A8B00480F6B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		347FC890145662320055BD5A /* iLED.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iLED.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		347FC894145662320055BD5A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		347FC896145662320055BD5A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -108,6 +110,7 @@
 				347FC8C5145681AB0055BD5A /* Default.png */,
 				347FC8C7145683480055BD5A /* Icon.png */,
 				347FC8C9145684560055BD5A /* Icon@2x.png */,
+				341C461118769A8B00480F6B /* Images.xcassets */,
 				347FC89B145662320055BD5A /* Supporting Files */,
 			);
 			path = iLED;
@@ -185,6 +188,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				347FC89F145662320055BD5A /* InfoPlist.strings in Resources */,
+				341C461218769A8B00480F6B /* Images.xcassets in Resources */,
 				347FC8A8145662330055BD5A /* MainStoryboard.storyboard in Resources */,
 				347FC8BA145669B00055BD5A /* iLED.png in Resources */,
 				347FC8BB145669B00055BD5A /* iLED_light.png in Resources */,
@@ -296,6 +300,8 @@
 		347FC8AF145662330055BD5A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iLED/iLED-Prefix.pch";
@@ -312,6 +318,8 @@
 		347FC8B0145662330055BD5A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iLED/iLED-Prefix.pch";
