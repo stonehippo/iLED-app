@@ -50,7 +50,6 @@
     // setup the serial cable manager
     rscMgr = [[RscMgr alloc] init];
     [rscMgr setDelegate:self];
-    [rscMgr setBaud:57600];
     
 	// Do any additional setup after loading the view, typically from a nib.
 }
@@ -103,7 +102,7 @@
 // protocol is the string which matched from the protocol list passed to initWithProtocol:
 - (void) cableConnected:(NSString *)protocol;
 {
-    [rscMgr setBaud:9600];
+    [rscMgr setBaud:57600];
     [rscMgr open];
 }
 
