@@ -50,6 +50,7 @@
     // setup the serial cable manager
     rscMgr = [[RscMgr alloc] init];
     [rscMgr setDelegate:self];
+    [rscMgr setBaud:57600];
     
 	// Do any additional setup after loading the view, typically from a nib.
 }
@@ -93,7 +94,7 @@
 {
     // map the incoming light level value (an in from 0-255) to a float
     float flevel = (float)lightLevel / 255;
-    level.text = [NSString stringWithFormat:@"%f", flevel];
+    level.text = [NSString stringWithFormat:@"%d", lightLevel];
     brightness.alpha = flevel;
 }
 

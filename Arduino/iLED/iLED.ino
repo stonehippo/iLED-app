@@ -20,15 +20,15 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 
-// Photoresistor pin
+// Photoresistor pin (analog)
 int photoPin = 0;
 
-// PWM-capable pin for physical LED
+// PWM-capable pin for physical LED (digital)
 int ledPin = 9;
 
 void setup() {
   pinMode(ledPin, OUTPUT);
-  Serial.begin(9600);
+  Serial.begin(57600);
 }
 
 void loop() {
@@ -40,8 +40,11 @@ void loop() {
 }
 
 int readLightLevel() {
+  // You may need to alter the maxValue, depending on the device generating the values
+  // For example, my LDP had max around 900 with used with a voltage divider.
+  int maxReading = 1023;
   int lightLevel = analogRead(photoPin);
-  lightLevel = map(lightLevel, 0, 900, 0, 255);
+  lightLevel = map(lightLevel, 0, 1023, 0, 255);
   lightLevel = constrain(lightLevel, 0, 255);
   return lightLevel; 
 }
