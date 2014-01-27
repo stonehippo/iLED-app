@@ -34,6 +34,7 @@
 @implementation ViewController
 @synthesize brightness;
 @synthesize level;
+@synthesize cableStatus;
 
 - (void)didReceiveMemoryWarning
 {
@@ -102,6 +103,7 @@
 // protocol is the string which matched from the protocol list passed to initWithProtocol:
 - (void) cableConnected:(NSString *)protocol;
 {
+    [cableStatus setText:@"Connected"];
     [rscMgr setBaud:57600];
     [rscMgr open];
 }
@@ -109,7 +111,8 @@
 // Redpark Serial Cable was disconnected and/or application moved to background
 - (void) cableDisconnected;
 {
-    
+    [cableStatus setText:@"Disconnected"];
+    [self setBrightnessOfLed:0];
 }
 
 // serial port status has changed

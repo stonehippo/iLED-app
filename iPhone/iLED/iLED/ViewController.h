@@ -38,5 +38,6 @@
 
 @property (weak, nonatomic) IBOutlet UIImageView *brightness;
 @property (weak, nonatomic) IBOutlet UILabel *level;
+@property (weak, nonatomic) IBOutlet UILabel *cableStatus;
 
 @end
